@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special birthday celebration">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animated-background" id="animatedBackground"></div>
+    <header>
+        <div class="birthday-header">
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" title="Change Theme">🎨</button>
+            </div>
+            <div class="header-decorations">
+                <span class="decoration-emoji">✨</span>
+                <span class="decoration-emoji">✨</span>
+                <span class="decoration-emoji">✨</span>
+            </div>
+            <h1 class="birthday-title">
+                <span class="title-word">Happy</span>
+                <span class="title-word">Birthday!</span>
+            </h1>
+            <div class="name-container">
+                <span class="name-decoration-left">✨</span>
+                <h2 class="birthday-name">Lailaa</h2>
+                <span class="name-decoration-right">✨</span>
+            </div>
+            <div class="header-tagline">Another amazing year of you! 🌟</div>
+            <div class="header-decorations-bottom">
+                <span class="decoration-emoji">✨</span>
+                <span class="decoration-emoji">✨</span>
+                <span class="decoration-emoji">✨</span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="message-section">
+            <h2>Special Message</h2>
+            <p class="birthday-message">
+                Wishing you an absolutely amazing day filled with joy, laughter, and all your favorite things! 
+                May this new year of your life bring you endless happiness and wonderful memories. And I hope you live to experience many more years of happiness and joy.
+            </p>
+        </section>
+        
+        <section class="paragraph-section">
+            <h3>Birthday Paragraph</h3>
+            <p class="section-subtitle">Made with love!</p>
+            <button class="positive-button" id="paragraphButton">Open Here 💝</button>
+        </section>
+        
+        <section class="generators-section">
+            <h3>Fun Generators</h3>
+            <div class="generators-grid">
+                <div class="generator-item">
+                    <h4>Random Compliment</h4>
+                    <div class="positive-messages-container" id="complimentContainer"></div>
+                    <button class="positive-button" id="complimentButton">Generate</button>
+                </div>
+                <div class="generator-item">
+                    <h4>Fun Facts About November</h4>
+                    <div class="positive-messages-container" id="factsContainer"></div>
+                    <button class="positive-button" id="factsButton">Get Fact</button>
+                </div>
+                <div class="generator-item">
+                    <h4>Birthday Fortune Cookie 🥠</h4>
+                    <div class="positive-messages-container" id="fortuneContainer"></div>
+                    <button class="positive-button" id="fortuneButton">Open Fortune</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="zodiac-section">
+            <h3>Your Zodiac Sign</h3>
+            <div class="zodiac-info" id="zodiacInfo"></div>
+        </section>
+        
+        <section class="stats-section">
+            <h3>Life Statistics</h3>
+            <div class="stats-grid" id="statsGrid"></div>
+        </section>
+        
+        <section class="predictions-section">
+            <h3>Birthday Predictions</h3>
+            <p class="section-subtitle">Discover what your new year has in store!</p>
+            <button class="positive-button" id="predictionButton">Get Your Prediction 🔮</button>
+            <div class="prediction-display" id="predictionDisplay"></div>
+        </section>
+        
+        <section class="things-container">
+            <div class="love-section">
+                <h2>10 Things I Love About You</h2>
+                <ol class="things-list love-list">
+                    <li>Your amazing smile that makes peoples day better</li>
+                    <li>How you always know how to make someone laugh</li>
+                    <li>Your kindness and compassion for others</li>
+                    <li>The way you listen and understand people</li>
+                    <li>Your passion for the things you care about</li>
+                    <li>How supportive you are</li>
+                    <li>Your unique perspective on life</li>
+                    <li>The way you make ordinary moments special</li>
+                    <li>Your incredible intelligence</li>
+                    <li>Just being you - you're perfect</li>
+                </ol>
+            </div>
+            
+            <div class="hate-section">
+                <h2>10 Things I "Hate" About You</h2>
+                <ol class="things-list hate-list">
+                    <li>How you're always right (it's so annoying)</li>
+                    <li>Thinking math is the best subject💔💔</li>
+                    <li>Your terrible jokes that still make me laugh</li>
+                    <li>How you're smarter at math</li>
+                    <li>How you're always angry =(</li>
+                    <li>How you make me smile even when I'm mad</li>
+                    <li>That you're too good at everything</li>
+                    <li>How you're funnier</li>
+                    <li>That you're impossible to stay mad at</li>
+                    <li>How you are stronger... ig😞😞</li>
+                </ol>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="countdown-timer" id="countdownTimer">
+            <div class="countdown-item">
+                <span class="countdown-number" id="days">00</span>
+                <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="hours">00</span>
+                <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="seconds">00</span>
+                <span class="countdown-label">Seconds</span>
+            </div>
+        </div>
+        <p>Made with love for your special day</p>
+    </footer>
+    
+    <div class="paragraph-modal" id="paragraphModal">
+        <div class="paragraph-modal-content">
+            <button class="paragraph-close" id="paragraphClose">✕</button>
+            <div class="paragraph-modal-text" id="paragraphModalText">
+                Happy Birthday, Laila! I wish you the best birthday ever and I hope you have the best year ever! You bring so much light, joy, and happiness wherever you go. Your amazing smile brightens everyone's day, and your kindness touches hearts in ways you may not even realize. On this wonderful day, I hope you feel how loved and appreciated you are. May this new year bring you endless adventures, beautiful memories, and dreams that come true. You deserve all the happiness in the worlddd, I hope you enjoy your birthday!
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
